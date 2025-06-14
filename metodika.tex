@@ -1,0 +1,56 @@
+\documentclass[a4paper,12pt]{extarticle}	% Стиль
+%\usepackage[pdftex,unicode,colorlinks=true,linkcolor = blue]{hyperref}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\usepackage{rotating}
+
+\usepackage{mathtext}
+%\usepackage{autonum}
+
+\usepackage{multirow}
+
+\usepackage{caption}
+
+\usepackage{float}
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[rgb]{xcolor}
+\hypersetup{ % Гиперссылки
+	colorlinks=true, % false: ссылки в рамках
+	urlcolor=blue % на URL
+}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+
+\usepackage{indentfirst} % Красная строка
+
+\newenvironment{comment}{}{}
+
+\graphicspath {{ Images / }}
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\newcommand{\md}[1]{{\textit{#1}}\marginpar{\hfill\(\blacktriangleright
+\)}}
+
+\newcommand{\ml}[2]{{\textbf{#1}}\marginpar{\hfill$\blacksquare$}\\\textit{#2}}
+
+\begin{document}
+
+	\parindent=0cm
+	\parskip=1pt
+	\reversemarginpar
+	\marginparpush = 0 pt
+
+	\input{ch1.tex}
+
+\end{document}
+
+
